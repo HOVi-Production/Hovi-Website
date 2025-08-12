@@ -1,27 +1,71 @@
 :root {
     --hovi-bg: #88337f;
+    --hovi-bg-80: #9E5A97;
     --hovi-primary: #ffc900;
     --hovi-accent: #ffe999;
+    --hovi-accent-80: #FFF5D1;
+    font-family: "EB Garamond", serif;
 }
 
 html {
     background-color: var(--hovi-bg);
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
 }
 
-body {
+#header {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    
-    color: white;
-    font-family: "Abel", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.3rem;
-    text-shadow: 1px 2px black ;
+    justify-content: center;
+    align-items: center;
+    overflow: clip;
+
+    color: var(--hovi-accent);
 }
 
-img {
-    height: 85vh;
-    align-self: center;
+#header h2 {
+    font-weight: normal;
+    font-size: 2.5em;
+}
+
+#header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140%; 
+    height: 78vh;   
+}
+
+#header img{
+    width: 150%;
+    max-width: 800px;
+    user-select: none;
+    user-drag: none;
+}
+
+nav {
+    background-color: var(--hovi-bg-80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6em;
+    gap: 2em;
+}
+
+nav a {
+    color: #ffe999;
+    font-size: 2.5em;
+    text-decoration: none;
+}
+
+.line-seperator {
+    display: inline-block; 
+    width:2px; 
+    height:4em; 
+    background: var(--hovi-accent-80); 
+    margin: 0 2em;
 }

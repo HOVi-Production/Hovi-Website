@@ -3,7 +3,7 @@
     --hovi-bg-80: #9E5A97;
     --hovi-primary: #ffc900;
     --hovi-accent: #ffe999;
-    --hovi-accent-80: #FFF5D1;
+    --hovi-accent-20: #FFF5D1;
     font-family: "EB Garamond", serif;
 }
 
@@ -52,20 +52,79 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 6em;
     gap: 2em;
+    flex-wrap: wrap;
+    padding: 1em 1.5em;
+}
+
+a {
+    color: var(--hovi-accent);
+    text-decoration: none;
 }
 
 nav a {
-    color: #ffe999;
     font-size: 2.5em;
-    text-decoration: none;
+}
+
+#games {
+    background-color: var(--hovi-accent-20);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#games h1 
+{
+    align-self: flex-start;
+    color: var(--hovi-bg);
+    font-size: 4em;
+    margin: 0 0 .5em 0;
+}
+
+.game {
+    max-width: 80vw;
+    display: flex;
+    flex-direction: row;
+    color: var(--hovi-accent-20);
+    background-color: var(--hovi-bg);
+    border-radius: 20px;
+    overflow: clip;
+    font-size: 1.5em;
+    height: 50vh;
+}
+
+.game div:first-child {
+    padding: .75em 0 1em 2em;
+    height: 100%;
+    flex-shrink: 4;
+}
+
+.game div:last-child
+{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+    flex-shrink: 3;
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.game h2 
+{
+    color: var(--hovi-primary);
+}
+
+.game hr 
+{
+    border-color: var(--hovi-accent-20);
 }
 
 .line-seperator {
     display: inline-block; 
     width:2px; 
     height:4em; 
-    background: var(--hovi-accent-80); 
+    background: var(--hovi-accent-20); 
     margin: 0 2em;
 }

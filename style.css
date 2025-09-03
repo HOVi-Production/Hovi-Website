@@ -205,5 +205,9 @@ footer {
     
     nav {
         position: relative;
+        flex-direction: column;
+    }
+    .line-seperator {
+        display: none;
     }
 }

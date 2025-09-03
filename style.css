@@ -1,27 +1,209 @@
 :root {
     --hovi-bg: #88337f;
+    --hovi-bg-80: #9E5A97;
     --hovi-primary: #ffc900;
+    --hovi-primary-20: #FFE999;
     --hovi-accent: #ffe999;
+    --hovi-accent-20: #FFF5D1;
+    font-family: "EB Garamond", serif;
 }
 
 html {
     background-color: var(--hovi-bg);
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding: 5em;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    
-    color: white;
-    font-family: "Abel", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.3rem;
-    text-shadow: 1px 2px black ;
+    margin: 0;
+    padding: 0;
 }
 
-img {
-    height: 85vh;
-    align-self: center;
+section {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: clip;
+    padding: 0;
+
+    color: var(--hovi-accent);
+}
+
+header h2 {
+    font-weight: normal;
+    font-size: 2.5em;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140%;
+    height: 78vh;
+}
+
+header img {
+    width: 150%;
+    max-width: 800px;
+    user-select: none;
+    user-drag: none;
+}
+
+nav {
+    background-color: var(--hovi-bg-80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    padding: 1em 1.5em;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+a {
+    color: var(--hovi-accent);
+    text-decoration: none;
+}
+
+nav a {
+    font-size: 2.5em;
+}
+
+#games {
+    background-color: var(--hovi-accent-20);
+}
+
+h1 {
+    align-self: flex-start;
+    color: var(--hovi-bg);
+    font-size: 4em;
+    margin: 0 0 .5em 0;
+}
+
+.game {
+    max-width: 80vw;
+    display: flex;
+    flex-direction: row;
+    color: var(--hovi-accent-20);
+    background-color: var(--hovi-bg);
+    border-radius: 20px;
+    overflow: clip;
+    font-size: 1.5em;
+}
+
+.game div:first-child {
+    padding: .75em 0 1em 2em;
+    flex-shrink: 4;
+}
+
+.game div:last-child {
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+    flex-shrink: 3;
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.game h2 {
+    color: var(--hovi-primary);
+}
+
+.game hr {
+    border-color: var(--hovi-accent-20);
+}
+
+#about {
+    background-color: var(--hovi-primary-20);
+}
+
+#about-desc {
+    background-color: var(--hovi-bg);
+    color: var(--hovi-accent-20);
+    padding: 2em;
+    border-radius: 20px;
+    width: 80%;
+    font-size: 1.5em;
+}
+
+#about-desc h2 {
+    font-size: 2em;
+}
+
+#bios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.person-bio {
+    text-align: center;
+    background-color: var(--hovi-bg-80);
+    margin: 2em;
+    border-radius: 20px;
+    padding: 2em;
+    color: var(--hovi-accent);
+}
+
+.person-bio h3,
+.person-bio p {
+    margin: 0;
+}
+
+.person-bio h3,
+#about h2 {
+    color: var(--hovi-primary);
+}
+
+.person-bio img {
+    height: 15em;
+    clip-path: circle();
+}
+
+footer {
+    text-align: center;
+    color: var(--hovi-primary);
+}
+
+.line-seperator {
+    display: inline-block;
+    width: 2px;
+    height: 4em;
+    background: var(--hovi-accent-20);
+    margin: 0 2em;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .game {
+        flex-direction: column-reverse;
+    }
+
+    .game div:first-child {
+        padding: 0em 2em 1em 2em;
+    }
+
+    .game div:last-child {
+        height: 30vh;
+        clip-path: none;
+        
+    }
+    
+    nav {
+        position: relative;
+    }
 }

@@ -1,21 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hovi Production Oy</title>
     <link rel="stylesheet" href="./style.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <img src="FullLogoColor.png" alt="Hovi Production Logo">
-    <div><h2>the indie game studio</h2></div>
-    
-    <div>
-        
-    </div>
+    <header id="header">
+        <div>
+            <img draggable="false" src="images/FullLogoColor.svg" alt="Hovi Production Logo">
+        </div>
+        <h2>the indie game studio</h2>
+    </header>
+    <nav>
+        <a href="#header">Hovi</a>
+        <span class="line-seperator"></span>
+        <a href="#games">Games</a>
+        <span class="line-seperator"></span>
+        <a href="#about">About</a>
+        <span class="line-seperator"></span>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="games">
+        <h1>Our Games</h1>
+        <article class="game" id="SlugWars">
+            <div>
+                <h2>
+                    Slug Wars
+                </h2>
+                <hr>
+                <p>
+                    Slug Wars is an online multiplayer 3rd-person shooter, where you play as cute Slugs, and after being
+                    eliminated you get to choose a power up! Slug Wars has been designed to be more approachable entry
+                    to the shooting game genre, and for the best experience we recommend playing with your friends!
+                </p>
+                <a href="https://store.steampowered.com/app/3445050/Slug_Wars/"><u>Check it out on Steam!</u></a>
+            </div>
+            <div style="background-image: url(images/SlugWars.png);">
+            </div>
+        </article>
+    </section>
+    <section id="about">
+        <h1>About</h1>
+        <div id="about-desc">
+            <article>
+                <h2>Hovi Production</h2>
+                <hr>
+                <p>We are Hovi Production, an indie game studio founded by students and built on a passion for
+                    creativity, collaboration, and learning. Our roots in student life shape who we are today: open,
+                    approachable, and always eager to experiment. We aim to create cozy, social, and welcoming games
+                    that bring people together, while fostering a culture where students and aspiring developers feel
+                    supported and encouraged to grow alongside us. </p>
+            </article>
+        </div>
+        <div id="bios">
+            <div class="person-bio">
+                <img src="images/wirenius.jpg" alt="">
+                <h3>Aaron Wirenius</h3>
+                <p><i>CEO</i></p>
+            </div>
+            <div class="person-bio">
+                <img src="images/sukuvaara.jpg" alt="">
+                <h3>Jaakko Sukuvaara</h3>
+                <p><i>COO</i></p>
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <h2>Contact</h2>
+        <p><a href="mailto:hovi.production@gmail.com">hovi.production@gmail.com</a></p>
+        <p>Hovi Production Oy</p>
+        <p>3492537-8</p>
+        <p>Vapaudenkatu 14 B 48</p>
+        <p>40100 Jyväskylä, Finland</p>
+    </footer>
 </body>
+
 </html>
